@@ -18,7 +18,6 @@ import com.example.pp6project.Repository.AdminRepository;
 
 
 @Controller
-@ComponentScan("com.project.Phase3EndProject")
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
