@@ -22,7 +22,7 @@ import com.example.pp6project.Repository.AdminRepository;
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
-	@GetMapping("/welocome")
+	@RequestMapping("/welocome")
 	public String welcomePage() {
 		return "adminlogin";
 	}
