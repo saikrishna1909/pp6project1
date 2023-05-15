@@ -24,7 +24,7 @@ public class AdminController {
 	public AdminRepository a_repo;
 	@GetMapping("/welocome")
 	public String welcomePage() {
-		return "welcome";
+		return "adminlogin";
 	}
 	@GetMapping("/adminvalidation")
 	public String adminPage(@RequestParam("email") String email, @RequestParam("password") String password,
