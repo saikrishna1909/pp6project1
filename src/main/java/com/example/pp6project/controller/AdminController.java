@@ -21,7 +21,7 @@ import com.example.pp6project.Repository.AdminRepository;
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
-	@GetMapping("api")
+	@GetMapping("/api")
 	public String welcomePage() {
 		return "welcome";
 	}
