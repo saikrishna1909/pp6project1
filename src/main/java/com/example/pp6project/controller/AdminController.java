@@ -18,10 +18,11 @@ import com.example.pp6project.Repository.AdminRepository;
 
 
 @Controller
+@RequestMapping("/api")
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
-	@GetMapping("/api")
+	@GetMapping("/welocome")
 	public String welcomePage() {
 		return "welcome";
 	}
