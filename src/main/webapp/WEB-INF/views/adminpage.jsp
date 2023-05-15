@@ -7,6 +7,6 @@
 <title>Admin Login</title>
 </head>
 <body>
-	<h1>${message}</h2>
+	<h1>Welcome ${message} to Admin Login</h2>
 </body>
 </html>

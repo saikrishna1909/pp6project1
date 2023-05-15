@@ -19,4 +19,3 @@ spring:
         view:
             prefix: /WEB-INF/views/
             suffix: .jsp
-    port: 8081
