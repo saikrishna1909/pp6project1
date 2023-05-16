@@ -3,6 +3,7 @@ package com.example.pp6project.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 import org.springframework.ui.ModelMap;
@@ -20,6 +21,7 @@ import com.example.pp6project.Repository.AdminRepository;
 @RestController
 @ComponentScan(basePackages={"com.example"})
 @RequestMapping("/api")
+@ConfigurationProperties("spring")
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
