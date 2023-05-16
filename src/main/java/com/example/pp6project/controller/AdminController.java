@@ -23,8 +23,6 @@ import com.example.pp6project.Repository.AdminRepository;
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
-	@Autowired
-	 private Environment env;
 	@RequestMapping("/welocome")
 	public ModelAndView welcomePage() {
 		var admin = new ModelAndView();
