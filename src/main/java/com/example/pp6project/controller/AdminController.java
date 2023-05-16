@@ -36,7 +36,7 @@ public class AdminController {
 			model.addAttribute("message", "Invalid Admin Credentials");
 			return "adminlogin";
 		} else {
-			model.addAttribute("name", admin.get(0).getName());
+			model.addAttribute("message", admin.get(0).getName());
 			return "adminpage";
 
 		}
