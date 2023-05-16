@@ -16,14 +16,14 @@ import com.example.pp6project.Repository.AdminRepository;
 
 
 @RestController
-@ComponentScan(basePackages={"com.example.pp6project"})
+@ComponentScan(basePackages={"com.example"})
 @RequestMapping("/api")
 public class AdminController {
 	@Autowired
 	public AdminRepository a_repo;
 	@RequestMapping("/welocome")
 	public String welcomePage() {
-		return "adminlogin";
+		return "adminlogin.jsp";
 	}
 	@GetMapping("/adminvalidation")
 	public String adminPage(@RequestParam("email") String email, @RequestParam("password") String password,
