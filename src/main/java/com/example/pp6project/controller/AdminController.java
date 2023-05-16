@@ -23,7 +23,7 @@ public class AdminController {
 	public AdminRepository a_repo;
 	@RequestMapping("/welocome")
 	public String welcomePage() {
-		return "adminlogin.jsp";
+		return "adminlogin";
 	}
 	@GetMapping("/adminvalidation")
 	public String adminPage(@RequestParam("email") String email, @RequestParam("password") String password,
