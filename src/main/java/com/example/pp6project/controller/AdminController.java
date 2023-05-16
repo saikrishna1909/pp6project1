@@ -18,6 +18,7 @@ import com.example.pp6project.Repository.AdminRepository;
 
 
 @Controller
+@ComponentScan("com.example.pp6project")
 @RequestMapping("/api")
 public class AdminController {
 	@Autowired
