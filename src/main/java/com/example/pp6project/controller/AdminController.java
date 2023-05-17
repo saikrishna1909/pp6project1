@@ -33,16 +33,23 @@ public class AdminController {
 		return admin;
 	}
 	@GetMapping("/adminvalidation")
-	public String adminPage(@RequestParam("email") String email, @RequestParam("password") String password,
+	public ModelAndView adminPage(@RequestParam("email") String email, @RequestParam("password") String password,
 			ModelMap model) {
 		List<Admin> admin = a_repo.find(email, password);
+		String message;
 
 		if (admin.isEmpty()) {
 			model.addAttribute("message", "Invalid Admin Credentials");
-			return "adminlogin";
-		} else {
-			model.addAttribute("message", admin.get(0).getName());
-			return "adminpage";
+			var adminl = new ModelAndView();
+			adminl.addObject(message,"Invalid Admin Credentials");
+		    adminl.setViewName("adminlogin");
+			 
+			return adminl;		} else {
+				var adminl = new ModelAndView();
+				String name;
+				adminl.addObject(name,admin.get(0).getName();
+			    adminl.setViewName("adminpage");
+			return adminl;
 
 		}
 
