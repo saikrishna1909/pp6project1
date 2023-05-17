@@ -47,7 +47,7 @@ public class AdminController {
 			return adminl;		} else {
 				var adminl = new ModelAndView();
 				String name;
-				adminl.addObject(name,admin.get(0).getName();
+				adminl.addObject(name,admin.get(0).getName());
 			    adminl.setViewName("adminpage");
 			return adminl;
 
