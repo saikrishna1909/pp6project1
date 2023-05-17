@@ -36,7 +36,7 @@ public class AdminController {
 	public ModelAndView adminPage(@RequestParam("email") String email, @RequestParam("password") String password,
 			ModelMap model) {
 		List<Admin> admin = a_repo.find(email, password);
-		String message;
+		String message = null;
 
 		if (admin.isEmpty()) {
 			model.addAttribute("message", "Invalid Admin Credentials");
@@ -46,7 +46,7 @@ public class AdminController {
 			 
 			return adminl;		} else {
 				var adminl = new ModelAndView();
-				String name;
+				String name = null;
 				adminl.addObject(name,admin.get(0).getName());
 			    adminl.setViewName("adminpage");
 			return adminl;
